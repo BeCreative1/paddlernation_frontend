@@ -9,6 +9,9 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      padding: "7.75rem",
+    },
     extend: {
       colors: {
         neutral: {

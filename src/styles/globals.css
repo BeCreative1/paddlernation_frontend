@@ -9,4 +9,9 @@
   }
 }
 
+@layer components {
+  .customContainer {
+   @apply px-[4rem] mx-auto max-w-[1920px]
+  }
+}
 
