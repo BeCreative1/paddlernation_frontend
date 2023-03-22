@@ -13,5 +13,8 @@
   .customContainer {
    @apply px-[4rem] mx-auto max-w-[1920px]
   }
+  .customFooterContainer {
+    @apply px-[4rem] mx-auto 
+  }
 }
 
