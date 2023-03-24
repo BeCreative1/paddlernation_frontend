@@ -36,6 +36,9 @@ module.exports = {
           900: "#003366",
         },
       },
+      backgroundImage: {
+        'stacked-waves': "url('../img/stacked-waves-haikei.svg')",
+      },
     },
   },
   plugins: [],
