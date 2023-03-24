@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import { useFetch } from "@/components/useFetch";
+import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 
 const LandingPage = () => {
@@ -8,6 +9,8 @@ const LandingPage = () => {
   return (
     <main>
       <Navbar currentPage="Udlejning" />
+      <Hero />
+
       <Footer />
     </main>
   );

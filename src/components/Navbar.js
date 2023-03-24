@@ -1,7 +1,26 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 const Navbar = ({ currentPage }) => {
+  const [navScroll, setNavScroll] = useState(true);
+
+  const showNav = () => {
+    if (window.scrollY >= 140) {
+      setNavScroll(false);
+    } else setNavScroll(true);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", showNav);
+    console.log("et");
+    return () => window.removeEventListener("scroll", showNav);
+  }, []);
+
   return (
-    <header className="flex items-center h-[120px] customContainer">
+    <header
+      className={` ${
+        navScroll &&
+        "flex items-center h-[120px] customContainer absolute z-[3] "
+      }`}
+    >
       <div className="flex items-center justify-between w-full  text-[32px]">
         <div>
           <a href="/">
@@ -9,7 +28,7 @@ const Navbar = ({ currentPage }) => {
           </a>
         </div>
         <nav>
-          <ul className="flex flex-row space-x-[120px] text-neutral-800 ">
+          <ul className="flex flex-row items-center md:ml-[320px] space-x-[140px] text-neutral-800 ">
             <li
               className={
                 "hover:bg-bluepb-700/10 p-2 rounded-2xl transition duration-200 ease-in-out" +
