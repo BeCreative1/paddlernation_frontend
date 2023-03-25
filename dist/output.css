@@ -517,12 +517,20 @@ body{
   --tw-backdrop-sepia:  ;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .flex {
   display: flex;
 }
 
-.h-3\/5 {
-  height: 60%;
+.hidden {
+  display: none;
+}
+
+.h-4\/5 {
+  height: 80%;
 }
 
 .h-full {
@@ -533,32 +541,20 @@ body{
   height: 100vh;
 }
 
-.w-2\/5 {
-  width: 40%;
+.w-1\/5 {
+  width: 20%;
 }
 
 .w-4\/5 {
   width: 80%;
 }
 
-.w-\[2px\] {
-  width: 2px;
-}
-
-.w-full {
-  width: 100%;
-}
-
 .w-\[1px\] {
   width: 1px;
 }
 
-.w-\[0\.5px\] {
-  width: 0.5px;
-}
-
-.flex-row {
-  flex-direction: row;
+.w-full {
+  width: 100%;
 }
 
 .flex-col {
@@ -596,15 +592,11 @@ body{
 }
 
 .bg-stacked-waves {
-  background-image: url('../img/stacked-waves-haikei.svg');
+  background-image: url('../../public/assets/stacked-waves-haikei.svg');
 }
 
 .bg-cover {
   background-size: cover;
-}
-
-.bg-contain {
-  background-size: contain;
 }
 
 .p-10 {
@@ -636,16 +628,47 @@ body{
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-.backdrop-blur-lg {
-  --tw-backdrop-blur: blur(16px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+@media (min-width: 768px) {
+  .md\:visible {
+    visibility: visible;
+  }
+
+  .md\:h-3\/5 {
+    height: 60%;
+  }
+
+  .md\:w-2\/5 {
+    width: 40%;
+  }
 }
 
-.backdrop-blur-md {
-  --tw-backdrop-blur: blur(12px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+@media (min-width: 1024px) {
+  .lg\:w-2\/5 {
+    width: 40%;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .\32xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 

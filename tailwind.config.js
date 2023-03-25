@@ -37,7 +37,7 @@ module.exports = {
         },
       },
       backgroundImage: {
-        'stacked-waves': "url('../img/stacked-waves-haikei.svg')",
+        'stacked-waves': "url('../../public/assets/stacked-waves-haikei.svg')",
       },
     },
   },
