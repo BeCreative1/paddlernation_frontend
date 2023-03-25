@@ -18,7 +18,7 @@ const Navbar = ({ currentPage }) => {
     <header
       className={` ${
         navScroll &&
-        "flex items-center h-[120px] customContainer absolute z-[3] "
+        "flex items-center h-[120px] w-full customContainer absolute z-[3] "
       }`}
     >
       <div className="flex items-center justify-between w-full  text-[32px]">

@@ -21,7 +21,7 @@ const Hero = () => {
       <video
         src="/assets/heroVideo_v2.mp4"
         type="video/mp4"
-        className="relative t-0 r-0 b-0 z-[2] 2xl-w-full 2xl-h-full"
+        className="relative t-0 r-0 b-0 z-[2] "
         width="100%"
         height="100%"
         autoPlay

@@ -9,7 +9,7 @@ import { FiYoutube } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <footer className="flex w-full bg-neutral-100 h-[100px] customFooterContainer mx-auto  mt-[auto]  ">
+    <footer className="flex w-full bg-neutral-100 h-[100px] customFooterContainer mx-auto  mt-[auto] z-[5] ">
       <div className="flex basis-1/2 flex-row">
         <ul className="grid grid-cols-2  gap-x-[140px] py-[26px] text-[16px] text-neutral-800">
           <li>
