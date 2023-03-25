@@ -9,7 +9,7 @@ const About = () => {
       <div className="wrapper flex items-center w-full h-screen bg-stacked-waves bg-cover">
         <AnimationOnScroll animateIn="animate__slideInUp" className="flex justify-center">
         <div className="blurredDiv w-4/5 h-4/5 md:h-3/5  bg-[#B0DAF8] bg-opacity-20 rounded-xl">
-          <div className="w-full h-full flex flex-col md:flex-row items-center justify-evenly p-10">
+          <div className="w-full h-full flex flex-col md:flex-row items-center justify-evenly p-10 backdrop-blur-md">
             <div className="logo w-2/5">
               <Image src={aboutLogo} alt='logo'></Image>
             </div>
