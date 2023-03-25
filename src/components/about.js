@@ -1,4 +1,6 @@
 import React from "react";
+import Image from 'next/image';
+import aboutLogo from '../assets/logoAboutUs.svg'
 
 const About = () => {
   return (
@@ -7,7 +9,7 @@ const About = () => {
         <div className="blurredDiv w-4/5 h-4/5 md:h-3/5  bg-[#B0DAF8] bg-opacity-20 rounded-xl">
           <div className="w-full h-full flex flex-col lg:flex-row items-center justify-evenly p-10 backdrop-blur-sm">
             <div className="logo w-1/5  md:w-2/5">
-              <img src='assets/logoAboutUs.svg' alt="logo" />
+              <Image src={aboutLogo} alt='logo'></Image>
             </div>
 
             <div className="line h-full w-[1px] invisible md:visible bg-black"></div>
