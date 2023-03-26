@@ -39,6 +39,13 @@ module.exports = {
           900: "#003366",
         },
       },
+      fontFamily: {
+        nunito: ["Nunito", "sans-serif"],
+      },
+      screens: {
+        xs: "520px",
+        mlg: "920px",
+      },
     },
   },
   plugins: [],
