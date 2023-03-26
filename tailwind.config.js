@@ -9,6 +9,9 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      padding: "7.75rem",
+    },
     extend: {
       colors: {
         neutral: {
@@ -35,6 +38,13 @@ module.exports = {
           800: "#044F95",
           900: "#003366",
         },
+      },
+      fontFamily: {
+        nunito: ["Nunito", "sans-serif"],
+      },
+      screens: {
+        xs: "520px",
+        mlg: "920px",
       },
       backgroundImage: {
         'stacked-waves': "url('../assets/stacked-waves-haikei.svg')",

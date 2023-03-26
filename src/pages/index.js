@@ -1,9 +1,8 @@
-import About from '@/components/about';
-
+import LandingPage from "./LandingPage";
 export default function Home() {
   return (
     <>
-      <About />
+      <LandingPage />
     </>
   );
 }
