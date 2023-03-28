@@ -1,14 +1,15 @@
 import React from "react";
-import aboutLogo from '@/img/logoAboutUs.svg';
+import aboutLogo from "@/img/logoAboutUs.svg";
+import Image from "next/image";
 
 const About = () => {
   return (
     <>
-      <div className="wrapper flex items-center justify-center w-full h-screen bg-stacked-waves bg-cover">
+      <div className="wrapper flex items-center justify-center w-full h-screen bg-stacked-waves  bg-cover">
         <div className="blurredDiv w-4/5 h-3/5  bg-[#B0DAF8] bg-opacity-20 rounded-xl">
           <div className="w-full h-full flex flex-row items-center justify-evenly p-10 backdrop-blur-sm">
             <div className="logo w-2/5">
-              <img src={aboutLogo} alt="logo" />
+              <Image src={aboutLogo} alt="logo" />
             </div>
             <div className="line h-full w-[1px] bg-black"></div>
             <div className="aboutText w-2/5 h-full flex items-center">
