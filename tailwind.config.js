@@ -13,6 +13,9 @@ module.exports = {
       padding: "7.75rem",
     },
     extend: {
+      screens: {
+        "3xl": "1690px",
+      },
       colors: {
         neutral: {
           50: "#F7F9FC",
@@ -47,7 +50,7 @@ module.exports = {
         mlg: "920px",
       },
       backgroundImage: {
-        'stacked-waves': "url('../assets/stacked-waves-haikei.svg')",
+        "stacked-waves": "url('../assets/stacked-waves-haikei.svg')",
       },
     },
   },
