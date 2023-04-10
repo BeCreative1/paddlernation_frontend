@@ -29,61 +29,71 @@ const EventSection = () => {
         </div>
 
         <div className="hidden sm:flex justify-items-center w-full  min-h-72 px-5">
-          <img
-            src="./assets/EventsSectionImages/Competition.png"
-            alt=""
-            className="w-1/5"
-          />
+          <div className="w-1/5 overflow-hidden img-wrapper">
+            <img
+              src="./assets/EventsSectionImages/Competition.png"
+              className="transition duration-500 ease-in-out hover:scale-125 inner-img"
+              alt=""
+            />
+          </div>
 
-          <img
-            src="./assets/EventsSectionImages/Trip.png"
-            alt=""
-            className="w-1/5"
-          />
-          <img
-            src="./assets/EventsSectionImages/PaddlePolo.png"
-            alt=""
-            className="w-1/5"
-          />
-          <img
-            src="./assets/EventsSectionImages/BeachParty.png"
-            alt=""
-            className="w-1/5"
-          />
-          <img
-            src="./assets/EventsSectionImages/PoloIndoors.png"
-            alt=""
-            className="w-1/5"
-          />
+          <div className="w-1/5 overflow-hidden img-wrapper">
+            <img
+              src="./assets/EventsSectionImages/Trip.png"
+              className="transition duration-500 ease-in-out hover:scale-125 inner-img"
+              alt=""
+            />
+          </div>
+          <div className="w-1/5 overflow-hidden img-wrapper">
+            <img
+              src="./assets/EventsSectionImages/PaddlePolo.png"
+              className="transition duration-500 ease-in-out hover:scale-125 inner-img"
+              alt=""
+            />
+          </div>
+          <div className="w-1/5 overflow-hidden img-wrapper">
+            <img
+              src="./assets/EventsSectionImages/BeachParty.png"
+              className="transition duration-500 ease-in-out hover:scale-125 inner-img"
+              alt=""
+            />
+          </div>
+          <div className="w-1/5 overflow-hidden img-wrapper">
+            <img
+              src="./assets/EventsSectionImages/PoloIndoors.png"
+              className="transition duration-500 ease-in-out hover:scale-125 inner-img"
+              alt=""
+            />
+          </div>
         </div>
 
         {/* aaaaaa */}
-        <div className="sm:hidden  h-[105vw] sm:h-[105vw] xl:h-80 2xl:h-96">
+        <div className="sm:hidden  h-[113vw] sm:h-[115vw] xl:h-80 2xl:h-96">
           <Carousel>
             <img
               src="./assets/EventsSectionImages/Competition.png"
               alt="..."
-              className="w-[75%] "
+              className="w-[70%] py-20"
             />
             <img
               src="./assets/EventsSectionImages/Trip.png"
               alt="..."
-              className="w-[75%] "
+              className="w-[70%] py-20"
             />
             <img
               src="./assets/EventsSectionImages/PaddlePolo.png"
               alt="..."
-              className="w-[75%] "
+              className="w-[70%] py-20"
             />
             <img
               src="./assets/EventsSectionImages/BeachParty.png"
               alt="..."
-              className="w-[75%] "
+              className="w-[70%] py-20"
             />
             <img
               src="./assets/EventsSectionImages/PoloIndoors.png"
               alt="..."
-              className="w-[75%] "
+              className="w-[70%] py-20"
             />
           </Carousel>
         </div>
@@ -94,6 +104,8 @@ const EventSection = () => {
           </button>
         </div>
       </div>
+
+      {/*  */}
     </>
   );
 };
