@@ -25,7 +25,7 @@ const EventSection = () => {
     <>
       <div className=" bg-[linear-gradient(180deg,_#76B3E3_0%,_#FFFFFF_100%)] font-medium">
         <div className="title-box flex justify-center">
-          <h3 className="text-[1.8rem] py-5 text-neutral-50">Team-building</h3>
+          <h3 className="text-[2.8rem] py-10 text-neutral-50">Team-building</h3>
         </div>
 
         <div className="hidden sm:flex justify-items-center w-full  min-h-72 px-5">
@@ -99,7 +99,7 @@ const EventSection = () => {
         </div>
         {/* aaaaaaaaaaaa */}
         <div className="flex justify-center mt-6">
-          <button className="bg-neutral-800 text-neutral-100 px-[5%] py-[.7%] text- xl font-semibold rounded-[5px] drop-shadow-[0_4px_10px_rgba(0,0,0,0.4)]">
+          <button className="bg-neutral-800 text-neutral-100 px-[15%] py-[2.1%] text-xl font-semibold rounded-[5px] drop-shadow-[0_4px_10px_rgba(0,0,0,0.4) sm:px-[5%] sm:py-[0.7%] sm:mt-5 hover:bg-neutral-300 ease-in duration-200">
             Find ud mere af
           </button>
         </div>
