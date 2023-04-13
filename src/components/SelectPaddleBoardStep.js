@@ -8,6 +8,7 @@ import { RxCross1 } from "react-icons/rx";
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
+import {NumberOfPaddleboards} from './index.js'
 
 
 const Calender = () => {
@@ -30,39 +31,7 @@ const Calender = () => {
         </div>
     )
 }
-function NumberOfPaddleboards() {
-    const [count, setCount] = useState(0);
-  
-    function increment() {
-      setCount(function (prevCount) {
-        return (prevCount += 1);
-      });
-    }
-  
-    function decrement() {
-      setCount(function (prevCount) {
-        if (prevCount > 0) {
-          return (prevCount -= 1); 
-        } else {
-          return (prevCount = 0);
-        }
-      });
-    }
-  
-    return (
-        <div className="flex flex-row justify-center items-center w-[80%] mt-4">
-            <div className='hidden group-hover:flex justify-center items-center w-[20px] h-[20px] rounded-full border-bluepb-900 border-2 cursor-pointer'>
-                <button onClick={decrement} className='text-center text-bluepb-900 font-bold text-[14px] mb-[1px]'>&#8211;</button>
-            </div>
-            <div className='flex justify-center items-center w-[35px] h-[35px] rounded-lg border-bluepb-900 border-2 mx-4'>
-                <p className='text-center text-bluepb-900 font-bold text-[16px]'>{count}</p>
-            </div>
-            <div className='hidden group-hover:flex justify-center items-center w-[20px] h-[20px] rounded-full border-bluepb-900 border-2 cursor-pointer'>
-                <button onClick={increment} className='w-[18px] h-[18px] text-bluepb-900 font-bold text-[18px] leading-[18px] mb-[2px] ml-[1px]'>&#43;</button>
-            </div>
-        </div>
-    );
-  }
+
 const PaddleCarousel = ({ image, title, size, capacity, price }) => (
     <div className={`flex snap-center group flex-col items-center xl:w-[40%] mlg:w-[60%] w-[80%] sm:pb-16 pb-4 hover:scale-[1.02] shadow-[0_5px_25px_-5px_rgba(0,0,0,0.3)] lg:mx-[5%] sm:mb-40 mb-16 bg-white rounded-3xl transition ease-out duration-500`}>
         <div className={`flex flex-col items-center mb-8`}>
@@ -74,12 +43,12 @@ const PaddleCarousel = ({ image, title, size, capacity, price }) => (
             <div className='w-[100%] border border-bluepb-900' />
             <p className="font-semibold text-bluepb-900 sm:text-[18px] text-[14px] leading-[23px] mt-2">{price}</p>
         </div>
-        <NumberOfPaddleboards />
+        <NumberOfPaddleboards isHidden={true}/>
 
     </div>
 )
 
-const PaddleBoardDeal = () => {
+const PaddleBoardDeal = ({addTrip}) => {
     return (
         <div className='flex flex-row justify-center items-start w-full border-r-2'>
             <div className={`flex snap-y snap-mandatory scroll-smooth mt-1 pt-4 sm:h-[88vh] overflow-y-scroll justify-evenly items-center flex-1 md:flex-row flex-col flex-wrap`}>
@@ -87,10 +56,10 @@ const PaddleBoardDeal = () => {
                     <PaddleCarousel key={paddleboard.id} {...paddleboard} index={index} />
                 ))}
             </div>
-            <div className={`flex flex-col justify-start items-center mlg:backdrop-blur-sm mt-4 pt-4 pb-2 sm:mx-12 mr-2 sticky top-32 md:flex-none `}>
+            <div className={`flex flex-col justify-start items-center mlg:backdrop-blur-sm mt-4 pt-4 pb-2 sm:mx-12 mr-2 sticky top-28 md:flex-none `}>
                 <Calender />
                 <p className='mlg:block hidden w-[400px] text-center text-normal text-[16px] mt-4'>Hvis du er interesseret i at leje paddleboards i flere dage, kan du kontakte os på følgende e-mail-adresse: info@paddlernation.com. Vi vil meget gerne hjælpe dig med at arrangere en længerevarende lejeaftale og finde en løsning, der passer til dine behov.</p>
-                <NextStepButton />
+                <NextStepButton title={"Næste"} addTrip={addTrip}/>
             </div>
 
         </div>
