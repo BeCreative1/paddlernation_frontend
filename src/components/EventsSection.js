@@ -68,32 +68,32 @@ const EventSection = () => {
         </div>
 
         {/* aaaaaa */}
-        <div className="sm:hidden  h-[113vw] sm:h-[115vw] xl:h-80 2xl:h-96">
+        <div className="sm:hidden  h-[113vw] sm:h-[115vw] xl:h-80 2xl:h-96 ">
           <Carousel>
             <img
               src="./assets/EventsSectionImages/Competition.png"
               alt="..."
-              className="w-[79%] py-20"
+              className="w-[65%] py-20"
             />
             <img
               src="./assets/EventsSectionImages/Trip.png"
               alt="..."
-              className="w-[79%] py-20"
+              className="w-[65%] py-20"
             />
             <img
               src="./assets/EventsSectionImages/PaddlePolo.png"
               alt="..."
-              className="w-[79%] py-20"
+              className="w-[65%] py-20"
             />
             <img
               src="./assets/EventsSectionImages/BeachParty.png"
               alt="..."
-              className="w-[79%] py-20"
+              className="w-[65%] py-20"
             />
             <img
               src="./assets/EventsSectionImages/PoloIndoors.png"
               alt="..."
-              className="w-[79%] py-20"
+              className="w-[65%] py-20"
             />
           </Carousel>
         </div>
