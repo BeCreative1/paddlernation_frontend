@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Kanit:wght@300&family=Montserrat&family=Nunito&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,11 +6,34 @@
 @layer base {
   body {
     font-family: "Nunito", sans-serif !important;
+    overflow: overlay;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+    opacity: 0.8;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #003366;
   }
 }
 
 @layer components {
   .customContainer {
     @apply px-[4rem] mx-auto max-w-[1920px];
+  }
+  .customFooterContainer {
+    @apply px-[4rem] mx-auto;
+  }
+  .bg-waves {
+    background-image: url("../assets/Background.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }

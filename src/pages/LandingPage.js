@@ -1,16 +1,21 @@
 import React from "react";
-// import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar";
+import { useFetch } from "@/components/useFetch";
+import Hero from "@/components/Hero";
+import Footer from "@/components/Footer";
+import About from "@/components/about";
 import EventSection from "@/components/EventsSection";
-
-// import { useFetch } from "@/components/useFetch";
 
 const LandingPage = () => {
   // const {} = useFetch(url);
   return (
-    <>
-      {/* <Navbar currentPage="Udlejning" /> */}
+    <main>
+      <Navbar currentPage="Udlejning" />
+      <Hero />
+      <About />
       <EventSection></EventSection>
-    </>
+      <Footer />
+    </main>
   );
 };
 

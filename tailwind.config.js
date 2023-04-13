@@ -40,6 +40,17 @@ module.exports = {
           900: "#003366",
         },
       },
+      fontFamily: {
+        nunito: ["Nunito", "sans-serif"],
+      },
+      screens: {
+        xs: "520px",
+        mlg: "920px",
+        "3xl": "1690px",
+      },
+      backgroundImage: {
+        "stacked-waves": "url('../assets/stacked-waves-haikei.svg')",
+      },
     },
   },
   plugins: [require("flowbite/plugin")],
