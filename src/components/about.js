@@ -1,7 +1,5 @@
 import React from "react";
-import Image from 'next/image';
 import aboutLogo from '../assets/logoAboutUs.svg'
-import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const About = () => {
   return (
@@ -46,7 +44,6 @@ const About = () => {
             </div>
           </div>
         </div>
-        </AnimationOnScroll>
       </div>
     </>
   );
