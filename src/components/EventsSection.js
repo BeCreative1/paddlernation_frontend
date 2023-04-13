@@ -73,33 +73,33 @@ const EventSection = () => {
             <img
               src="./assets/EventsSectionImages/Competition.png"
               alt="..."
-              className="w-[70%] py-20"
+              className="w-[79%] py-20"
             />
             <img
               src="./assets/EventsSectionImages/Trip.png"
               alt="..."
-              className="w-[70%] py-20"
+              className="w-[79%] py-20"
             />
             <img
               src="./assets/EventsSectionImages/PaddlePolo.png"
               alt="..."
-              className="w-[70%] py-20"
+              className="w-[79%] py-20"
             />
             <img
               src="./assets/EventsSectionImages/BeachParty.png"
               alt="..."
-              className="w-[70%] py-20"
+              className="w-[79%] py-20"
             />
             <img
               src="./assets/EventsSectionImages/PoloIndoors.png"
               alt="..."
-              className="w-[70%] py-20"
+              className="w-[79%] py-20"
             />
           </Carousel>
         </div>
         {/* aaaaaaaaaaaa */}
-        <div className="flex justify-center mt-6">
-          <button className="bg-neutral-800 text-neutral-100 px-[15%] py-[2.1%] text-xl font-semibold rounded-[5px] drop-shadow-[0_4px_10px_rgba(0,0,0,0.4) sm:px-[5%] sm:py-[0.7%] sm:mt-5 hover:bg-neutral-300 ease-in duration-200">
+        <div className="flex justify-center my-[10vw] sm:my-[5vw]">
+          <button className="bg-neutral-800 text-neutral-100 px-[15%] py-[2.1%] text-xl font-semibold rounded-[5px] drop-shadow-[0_4px_10px_rgba(0,0,0,0.4) ] sm:px-[5%] sm:py-[0.7%]  hover:bg-neutral-300 ease-in duration-200">
             Find ud mere af
           </button>
         </div>
