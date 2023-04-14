@@ -1,11 +1,14 @@
 import React from "react";
 import aboutLogo from '../assets/logoAboutUs.svg'
 import Image from 'next/image';
+import 'animate.css';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const About = () => {
   return (
     <>
       <div className="wrapper flex items-center justify-center md:h-screen w-full bg-stacked-waves bg-cover">
+      <AnimationOnScroll animateIn="animate__slideInUp" className="flex items-center justify-center">
         <div className="blurredDiv w-4/5 md:h-3/5 mb-4 mt-4 bg-[#B0DAF8] bg-opacity-20 rounded-xl">
           <div className="w-full h-full flex flex-col md:flex-row items-center justify-evenly p-10 backdrop-blur-sm">
             <div className="logo w-2/5 pb-6 md:pb-0">
@@ -45,6 +48,8 @@ const About = () => {
             </div>
           </div>
         </div>
+        </AnimationOnScroll>
+
       </div>
     </>
   );
