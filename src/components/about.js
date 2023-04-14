@@ -15,7 +15,7 @@ const About = () => {
               <Image src={aboutLogo} alt="logo"></Image>
             </div>
 
-            <div className="line md:h-full w-[1px] invisible md:visible bg-black"></div>
+            <div className="line md:h-[35vw] w-[1px] invisible md:visible bg-black"></div>
             
             <div className="aboutText md:w-2/5 h-full flex items-center">
               <div className="flex h-full flex-col justify-evenly">
