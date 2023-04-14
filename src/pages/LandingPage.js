@@ -4,6 +4,7 @@ import { useFetch } from "@/components/useFetch";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import About from "@/components/about";
+import EventSection from "@/components/EventsSection";
 
 const LandingPage = () => {
   // const {} = useFetch(url);
@@ -12,6 +13,7 @@ const LandingPage = () => {
       <Navbar currentPage="Udlejning" />
       <Hero />
       <About />
+      <EventSection></EventSection>
       <Footer />
     </main>
   );
