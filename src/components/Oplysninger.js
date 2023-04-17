@@ -19,7 +19,7 @@ const Oplysninger = () => {
               <div class="justify-center items-center flex">
                 <input
                   required
-                  className=" sm:w-full lg:w-[280px]   md:h-[80px] sm:h-[60px] bg-white text-gray-700 border shadow-[0_5px_25px_-5px_rgba(0,0,0,0.3)] px-10 mb-3 rounded-2xl focus:bg-white"
+                  className=" sm:w-full lg:w-[280px] md:h-[80px] sm:h-[60px] bg-white text-gray-700 border shadow-[0_5px_25px_-5px_rgba(0,0,0,0.3)] px-10 mb-3 rounded-2xl focus:bg-white"
                   type="text"
                   placeholder="Navn"
                 />
