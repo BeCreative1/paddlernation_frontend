@@ -7,15 +7,17 @@ import NextStepButton from "./NextStepButton.js";
 import ExtrasStep from "./ExtrasStep.js";
 import RadioChoices from "./RadioChoices.js";
 import PriceOverview from "./PriceOverview.js";
+import Oplysninger from "./Oplysninger.js";
 
 export {
-    Navbar,
-    RentProcess,
-    SelectPaddleBoardStep,
-    Footer,
-    NextStepButton,
-    ExtrasStep,
-    NumberOfPaddleboards,
-    RadioChoices,
-    PriceOverview,
-  };
+  Navbar,
+  RentProcess,
+  SelectPaddleBoardStep,
+  Footer,
+  NextStepButton,
+  ExtrasStep,
+  NumberOfPaddleboards,
+  RadioChoices,
+  PriceOverview,
+  Oplysninger,
+};
