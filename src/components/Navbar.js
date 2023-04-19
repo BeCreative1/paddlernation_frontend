@@ -51,7 +51,7 @@ const Navbar = ({ currentPage }) => {
                 (currentPage === "Om Os" ? " font-bold" : "")
               }
             >
-              <a href="/">Om os</a>
+              <a href="/AboutPage">Om os</a>
             </li>
             <li
               className={
@@ -59,7 +59,7 @@ const Navbar = ({ currentPage }) => {
                 (currentPage === "Udlejning" ? " font-bold" : "")
               }
             >
-              <a href="Udlejning/">Udlejning</a>
+              <a href="/RentingPage">Udlejning</a>
             </li>
             <li
               className={
@@ -67,7 +67,7 @@ const Navbar = ({ currentPage }) => {
                 (currentPage === "TeamBuildings" ? "font-bold" : "")
               }
             >
-              <a href="/TeamBuilding">Team-Building</a>
+              <a href="/TeamBuildingPage">Team-Building</a>
             </li>
           </ul>
           <MenuItems showMenu={showMenu} activeMenu={activeMenu} />
