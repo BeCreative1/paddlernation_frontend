@@ -32,10 +32,10 @@ const MenuItems = ({ showMenu, activeMenu, currentPage }) => {
       <li
         className={
           "text-bluepb-800" +
-          (currentPage === "TeamBuildings" ? "font-bold" : "")
+          (currentPage === "TeamBuildingPage" ? "font-bold" : "")
         }
       >
-        <a href="/TeamBuilding">Team-Building</a>
+        <a href="/TeamBuildingPage">Team-Building</a>
       </li>
     </ul>
   );

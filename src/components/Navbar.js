@@ -31,9 +31,13 @@ const Navbar = ({ currentPage }) => {
     <header
       className={`${
         show ? "flex" : "hidden"
-      } items-center h-[120px] w-full customContainer fixed z-[3] transition-all duration-200 ease-in-out`}
+      } items-center h-[120px] w-full customContainer
+       fixed z-[3] transition-all duration-200 ease-in-out`}
     >
-      <div className="flex items-center justify-between w-full xl:text-[32px]  sm:text-[24px]">
+      <div
+        className="flex items-center justify-between
+       w-full xl:text-[32px] sm:text-[24px]"
+      >
         <div>
           <a href="/">
             <img src="/assets/Logo.png" alt="PaddlerNation" />
@@ -44,7 +48,11 @@ const Navbar = ({ currentPage }) => {
           <div className="lg:hidden text-neutral-800 sm:flex">
             <AiOutlineMenu onClick={showMenu} />
           </div>
-          <ul className="flex sm:hidden mt-5 lg:flex flex-row items-center md:ml-[320px] sm:text-[24px] xl:text-[28px] 4xl:text-[32px] 2xl:space-x-[120px] text-neutral-800 ">
+          <ul
+            className="flex sm:hidden mt-5 lg:flex flex-row items-center 
+          md:ml-[320px] sm:text-[24px] xl:text-[28px] 4xl:text-[32px] 
+          2xl:space-x-[120px] text-neutral-800 "
+          >
             <li
               className={
                 "hover:bg-bluepb-700/10 p-2 rounded-2xl transition duration-200 ease-in-out" +
@@ -64,7 +72,7 @@ const Navbar = ({ currentPage }) => {
             <li
               className={
                 "hover:bg-bluepb-700/10 p-2 rounded-2xl transition duration-200 ease-in-out" +
-                (currentPage === "TeamBuildings" ? "font-bold" : "")
+                (currentPage === "TeamBuildingPage" ? "font-bold" : "")
               }
             >
               <a href="/TeamBuildingPage">Team-Building</a>

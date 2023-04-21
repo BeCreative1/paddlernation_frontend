@@ -13,10 +13,10 @@ const Hero = () => {
   return (
     <div className="h-screen relative flex flex-col items-center justify-center">
       <div
-        className="absolute bottom-3 left-1/2 transform -translate-x-1/2 z-10 sm:bottom-12 md:bottom-10 lg:bottom-16"
+        className="absolute bottom-3 left-1/2 transform -translate-x-1/2 z-10 sm:bottom-12 md:bottom-10 lg:bottom-16 hover:cursor-pointer"
         onClick={handleScroll}
       >
-        <RxDoubleArrowDown className="w-10 h-10 text-neutral-100" />
+        <RxDoubleArrowDown className="w-10 h-10 text-neutral-100 " />
       </div>
       <video
         src="/assets/heroVideo_v2.mp4"
