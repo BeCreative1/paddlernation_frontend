@@ -70,7 +70,7 @@ const Gallery = () => {
           <div className="flex">
             <img
               src="./assets/GallerySectionImages/1.jpg"
-              className="w-[15%]"
+              className=""
               alt=""
             />
             <img
@@ -146,11 +146,133 @@ const Gallery = () => {
       </div> */}
       <div ref={app}>
         <section>
-          <div class="ImageScroll__wrapper">
-            <div class="ImageScroll__image    ImageScroll__image-1"></div>
+          <div className="ImageScroll__wrapper flex content-center">
+            <div className="ImageScroll__image    ImageScroll__image-1 flex">
+              <img
+                src="./assets/GallerySectionImages/1.jpg"
+                className=" mr-[1vw]"
+                alt=""
+              />
+              <img
+                src="./assets/GallerySectionImages/2.jpg"
+                className=" mr-[1vw]"
+                alt=""
+              />
+              <img
+                src="./assets/GallerySectionImages/3.jpg"
+                className=" mr-[1vw]"
+                alt=""
+              />
+              <img
+                src="./assets/GallerySectionImages/4.jpg"
+                className=" mr-[1vw]"
+                alt=""
+              />
+              <img
+                src="./assets/GallerySectionImages/5.jpg"
+                className=" mr-[1vw]"
+                alt=""
+              />
+              <img
+                src="./assets/GallerySectionImages/6.jpg"
+                className=" mr-[1vw]"
+                alt=""
+              />
+              <img
+                src="./assets/GallerySectionImages/7.jpg"
+                className=" mr-[1vw]"
+                alt=""
+              />
+              <img
+                src="./assets/GallerySectionImages/8.jpg"
+                className=" mr-[1vw]"
+                alt=""
+              />
+              <img
+                src="./assets/GallerySectionImages/9.jpg"
+                className=" mr-[1vw]"
+                alt=""
+              />
+              <img
+                src="./assets/GallerySectionImages/10.jpg"
+                className=" mr-[1vw]"
+                alt=""
+              />
+              <img
+                src="./assets/GallerySectionImages/11.jpg"
+                className=" mr-[1vw]"
+                alt=""
+              />
+              <img
+                src="./assets/GallerySectionImages/12.jpg"
+                className=" mr-[1vw]"
+                alt=""
+              />
+            </div>
           </div>
-          <div class="ImageScroll__wrapper">
-            <div class="ImageScroll__image    ImageScroll__image-2"></div>
+          <div className="ImageScroll__wrapper">
+            <div className="ImageScroll__image    ImageScroll__image-2 flex">
+              <img
+                src="./assets/GallerySectionImages/1.jpg"
+                className=" mr-[1vw]"
+                alt=""
+              />
+              <img
+                src="./assets/GallerySectionImages/2.jpg"
+                className=" mr-[1vw]"
+                alt=""
+              />
+              <img
+                src="./assets/GallerySectionImages/3.jpg"
+                className=" mr-[1vw]"
+                alt=""
+              />
+              <img
+                src="./assets/GallerySectionImages/4.jpg"
+                className=" mr-[1vw]"
+                alt=""
+              />
+              <img
+                src="./assets/GallerySectionImages/5.jpg"
+                className=" mr-[1vw]"
+                alt=""
+              />
+              <img
+                src="./assets/GallerySectionImages/6.jpg"
+                className=" mr-[1vw]"
+                alt=""
+              />
+              <img
+                src="./assets/GallerySectionImages/7.jpg"
+                className=" mr-[1vw]"
+                alt=""
+              />
+              <img
+                src="./assets/GallerySectionImages/8.jpg"
+                className=" mr-[1vw]"
+                alt=""
+              />
+              <img
+                src="./assets/GallerySectionImages/9.jpg"
+                className=" mr-[1vw]"
+                alt=""
+              />
+              <img
+                src="./assets/GallerySectionImages/10.jpg"
+                className=" mr-[1vw]"
+                alt=""
+              />
+              <img
+                src="./assets/GallerySectionImages/11.jpg"
+                className=" mr-[1vw]"
+                alt=""
+              />
+              <img
+                src="./assets/GallerySectionImages/12.jpg"
+                className=" mr-[1vw]"
+                alt=""
+              />
+            </div>
           </div>
         </section>
       </div>
