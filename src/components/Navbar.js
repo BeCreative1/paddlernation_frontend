@@ -38,7 +38,7 @@ const Navbar = ({ currentPage }) => {
         className="flex items-center justify-between
        w-full xl:text-[32px] sm:text-[24px]"
       >
-        <div>
+        <div className="xs:w-80 xs:h-auto md:h-auto md:w-auto">
           <a href="/">
             <img src="/assets/Logo.png" alt="PaddlerNation" />
           </a>
@@ -46,10 +46,13 @@ const Navbar = ({ currentPage }) => {
 
         <nav>
           <div className="lg:hidden text-neutral-800 sm:flex">
-            <AiOutlineMenu onClick={showMenu} />
+            <AiOutlineMenu
+              className="w-8 h-8 mt-5 xs:ml-5"
+              onClick={showMenu}
+            />
           </div>
           <ul
-            className="flex sm:hidden mt-5 lg:flex flex-row items-center 
+            className="flex xs:hidden mt-5 lg:flex flex-row items-center 
           md:ml-[320px] sm:text-[24px] xl:text-[28px] 4xl:text-[32px] 
           2xl:space-x-[120px] text-neutral-800 "
           >
