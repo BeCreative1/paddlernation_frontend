@@ -31,14 +31,17 @@ const Navbar = ({ currentPage }) => {
     <header
       className={`${
         show ? "flex" : "hidden"
-      } items-center h-[120px] w-full 2xl:w-[100%] 4xl:px-[200px] mt-2 customContainer 
-       fixed z-[3] transition-all duration-200 ease-in-out`}
+      } items-center h-[120px] w-full 2xl:w-[100%] 4xl:px-[200px] customContainer 
+       fixed z-[3] transition-all duration-200 ease-in-out backdrop-blur-lg`}
     >
       <div
         className="flex items-center justify-between
         xl:text-[32px] w-full sm:text-[24px] "
       >
-        <div className="xs:w-80 xs:h-auto md:h-auto md:w-auto lg:h-auto lg:w-80 xl:w-[500px] 4xl:flex-1 2xl:w-auto">
+        <div
+          className="xs:w-80 xs:h-auto md:h-auto md:w-auto lg:h-auto 
+        lg:w-80 xl:w-[500px] 4xl:flex-1 2xl:w-auto"
+        >
           <a href="/">
             <img src="/assets/Logo.png" alt="PaddlerNation" />
           </a>
@@ -54,7 +57,7 @@ const Navbar = ({ currentPage }) => {
           <ul
             className="flex xs:hidden mt-5 lg:flex flex-row items-center 
           lg:space-x-[50px] sm:text-[24px] xl:text-[32px] 2xl:text-[32px] 4xl:text-[38px] 
-          2xl:space-x-[120px] text-neutral-800  2xl:ml-[100px] "
+          2xl:space-x-[120px] text-neutral-900 2xl:ml-[100px] "
           >
             <li
               className={
