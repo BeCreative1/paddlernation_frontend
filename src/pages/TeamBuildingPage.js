@@ -1,10 +1,9 @@
 import React from "react";
-import { Navbar } from "@/components";
-
+import FormSection from "@/components/FormSection";
 const TeamBuildingPage = () => {
   return (
     <main>
-      <Navbar />
+      <FormSection />
     </main>
   );
 };
