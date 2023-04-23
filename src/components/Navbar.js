@@ -30,9 +30,9 @@ const Navbar = ({ currentPage }) => {
   return (
     <header
       className={`${
-        show ? "flex" : "hidden"
+        show ? "" : "hidden"
       } items-center h-[120px] w-full 2xl:w-[100%] 4xl:px-[200px] customContainer 
-       fixed z-[3] transition-all duration-200 ease-in-out backdrop-blur-lg`}
+       fixed z-[3] transition-all duration-200 ease-in-out backdrop-blur-[2px]`}
     >
       <div
         className="flex items-center justify-between

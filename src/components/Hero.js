@@ -24,10 +24,14 @@ const Hero = () => {
         className="h-full w-full object-cover absolute top-0 left-0 -z-1"
         autoPlay
         loop
+        muted
       ></video>
-      <div className="absolute sm:bottom-[150px] md:bottom-40 lg:bottom-17">
+      <div className="absolute xs:bottom-[150px] md:bottom-40 lg:bottom-17">
         <a href="/RentingPage">
-          <button className="bg-neutral-100 hover:bg-neutral-200 text-neutral-700 h-12 w-48 rounded-xl">
+          <button
+            className="bg-neutral-100 hover:bg-neutral-200
+           text-neutral-700 h-12 w-48 rounded-xl"
+          >
             Booking
           </button>
         </a>
