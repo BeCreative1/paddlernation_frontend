@@ -53,7 +53,7 @@ const Navbar = ({ currentPage }) => {
         <nav>
           <div className="lg:hidden cursor-pointer text-neutral-800 xs:flex">
             <AiOutlineMenu
-              className="w-8 h-8 mt-5 xs:ml-5 "
+              className={"w-8 h-8 mt-5 xs:ml-5 "}
               onClick={showMenu}
             />
           </div>

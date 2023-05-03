@@ -1,5 +1,5 @@
-import React from "react";
-import { AiOutlineClose } from "react-icons/ai";
+import React, { use, useEffect, useState } from "react";
+import { AiOutlineMenu } from "react-icons/ai";
 import Router, { useRouter } from "next/router";
 
 const MenuItems = ({ showMenu, activeMenu, currentPage }) => {
@@ -7,19 +7,20 @@ const MenuItems = ({ showMenu, activeMenu, currentPage }) => {
 
   return (
     <ul
-      className={
+      className={`${
         activeMenu
-          ? "flex-col ml-10 flex items-center cursor-pointer backdrop-blur-sm fixed top-0 sm:bottom-1/3 right-0 sm:left-1/4 md:left-1/2 uppercase  gap-8 justify-start p-8 z-auto"
+          ? "flex-col ml-10 flex items-center cursor-pointer backdrop:blur-lg fixed top-0 sm:bottom-1/3 right-0 sm:left-1/4 md:left-1/2 uppercase  gap-8 justify-start p-8 z-auto"
           : " hidden"
-      }
+      } 
+          lg:hidden`}
     >
-      <AiOutlineClose
+      <AiOutlineMenu
         onClick={showMenu}
-        className="absolute text-neutral-100 top-[80px] right-[60px] w-10 h-10"
+        className="absolute top-[48px] right-[64px] w-8 h-8 text-neutral-800"
       />
       <li
         className={
-          "mt-40 text-neutral-100 hover:bg-neutral-600/20 text-3xl " +
+          "mt-40 text-neutral-600 hover:bg-neutral-800/20 text-3xl bg-neutral-400/30 " +
           (currentPage === "AboutPage" ? " font-bold" : "")
         }
       >
@@ -29,7 +30,7 @@ const MenuItems = ({ showMenu, activeMenu, currentPage }) => {
       </li>
       <li
         className={
-          "text-neutral-100 hover:bg-neutral-600/20 text-3xl " +
+          "text-neutral-600 hover:bg-neutral-800/20 text-3xl bg-neutral-400/30 " +
           (currentPage === "RentingPage" ? " font-bold" : "")
         }
       >
@@ -42,7 +43,7 @@ const MenuItems = ({ showMenu, activeMenu, currentPage }) => {
       </li>
       <li
         className={
-          "text-neutral-100 hover:bg-neutral-600/20 text-3xl" +
+          "text-neutral-600 hover:bg-neutral-800/20 text-3xl bg-neutral-400/30" +
           (currentPage === "TeamBuildingPage" ? "font-bold" : "")
         }
       >
