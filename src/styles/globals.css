@@ -35,5 +35,6 @@
     background-image: url("../assets/Background.svg");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
   }
 }

@@ -6,17 +6,17 @@ const MenuItems = ({ showMenu, activeMenu, currentPage }) => {
     <ul
       className={
         activeMenu
-          ? "flex-col flex items-center fixed top-0 sm:bottom-1/3 right-0 sm:left-1/4 md:left-1/2 uppercase backdrop-blur-md gap-8 justify-start p-8 z-auto"
-          : "hidden"
+          ? "flex-col ml-10 flex items-center cursor-pointer backdrop-blur-sm fixed top-0 sm:bottom-1/3 right-0 sm:left-1/4 md:left-1/2 uppercase  gap-8 justify-start p-8 z-auto"
+          : " hidden"
       }
     >
       <AiOutlineClose
         onClick={showMenu}
-        className="absolute text-neutral-100 top-10 right-10 w-10 h-10"
+        className="absolute text-neutral-100 top-[80px] right-[60px] w-10 h-10"
       />
       <li
         className={
-          "mt-40 text-neutral-600" +
+          "mt-40 text-neutral-100 hover:bg-neutral-600/20 text-3xl " +
           (currentPage === "Om Os" ? " font-bold" : "")
         }
       >
@@ -24,14 +24,15 @@ const MenuItems = ({ showMenu, activeMenu, currentPage }) => {
       </li>
       <li
         className={
-          "text-neutral-600" + (currentPage === "Udlejning" ? " font-bold" : "")
+          "text-neutral-100 hover:bg-neutral-600/20 text-3xl " +
+          (currentPage === "Udlejning" ? " font-bold" : "")
         }
       >
         <a href="/Udlejning">Udlejning</a>
       </li>
       <li
         className={
-          "text-neutral-600" +
+          "text-neutral-100 hover:bg-neutral-600/20 text-3xl" +
           (currentPage === "TeamBuildingPage" ? "font-bold" : "")
         }
       >
