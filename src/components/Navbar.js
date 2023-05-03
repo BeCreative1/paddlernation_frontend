@@ -1,8 +1,11 @@
 import { React, useState, useEffect } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import MenuItems from "./MenuItems";
+import Router, { useRouter } from "next/router";
 
 const Navbar = ({ currentPage }) => {
+  const router = useRouter();
+
   const [show, setShow] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [activeMenu, setActiveMenu] = useState(false);
@@ -62,18 +65,20 @@ const Navbar = ({ currentPage }) => {
             <li
               className={
                 "hover:bg-bluepb-700/10 p-2 rounded-2xl transition duration-200 ease-in-out" +
-                (currentPage === "Om Os" ? " font-bold" : "")
+                (currentPage === "AboutPage" ? " font-bold" : "")
               }
             >
-              <a href="/AboutPage">Om os</a>
+              <button onClick={() => router.push("/AboutPage")}>Om os</button>
             </li>
             <li
               className={
                 "hover:bg-bluepb-700/10 p-2 rounded-2xl transition duration-200 ease-in-out" +
-                (currentPage === "Udlejning" ? " font-bold" : "")
+                (currentPage === "RentingPage" ? " font-bold" : "")
               }
             >
-              <a href="/RentingPage">Udlejning</a>
+              <button onClick={() => router.push("/RentingPage")}>
+                Udlejning
+              </button>
             </li>
             <li
               className={
@@ -81,7 +86,9 @@ const Navbar = ({ currentPage }) => {
                 (currentPage === "TeamBuildingPage" ? "font-bold" : "")
               }
             >
-              <a href="/TeamBuildingPage">Team-Building</a>
+              <button onClick={() => router.push("/TeamBuildingPage")}>
+                Team-Building
+              </button>
             </li>
           </ul>
           <MenuItems showMenu={showMenu} activeMenu={activeMenu} />

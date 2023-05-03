@@ -1,7 +1,10 @@
 import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
+import Router, { useRouter } from "next/router";
 
 const MenuItems = ({ showMenu, activeMenu, currentPage }) => {
+  const router = useRouter();
+
   return (
     <ul
       className={
@@ -17,18 +20,25 @@ const MenuItems = ({ showMenu, activeMenu, currentPage }) => {
       <li
         className={
           "mt-40 text-neutral-100 hover:bg-neutral-600/20 text-3xl " +
-          (currentPage === "Om Os" ? " font-bold" : "")
+          (currentPage === "AboutPage" ? " font-bold" : "")
         }
       >
-        <a href="/">Om os</a>
+        <button className="uppercase" onClick={() => router.push("/AboutPage")}>
+          Om os
+        </button>
       </li>
       <li
         className={
           "text-neutral-100 hover:bg-neutral-600/20 text-3xl " +
-          (currentPage === "Udlejning" ? " font-bold" : "")
+          (currentPage === "RentingPage" ? " font-bold" : "")
         }
       >
-        <a href="/Udlejning">Udlejning</a>
+        <button
+          className="uppercase"
+          onClick={() => router.push("/RentingPage")}
+        >
+          Udlejning
+        </button>
       </li>
       <li
         className={
@@ -36,7 +46,12 @@ const MenuItems = ({ showMenu, activeMenu, currentPage }) => {
           (currentPage === "TeamBuildingPage" ? "font-bold" : "")
         }
       >
-        <a href="/TeamBuildingPage">Team-Building</a>
+        <button
+          className="uppercase"
+          onClick={() => router.push("/TeamBuildingPage")}
+        >
+          Team-Building
+        </button>
       </li>
     </ul>
   );
