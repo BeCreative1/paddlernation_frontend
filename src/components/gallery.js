@@ -19,7 +19,7 @@ const Gallery = () => {
       { x: "-100vw" },
       {
         x: 0,
-        duration: 10,
+        duration: 20,
       },
       0
     );
@@ -29,7 +29,7 @@ const Gallery = () => {
       { x: 0 },
       {
         x: "-100vw",
-        duration: 10,
+        duration: 20,
       },
       0
     );
@@ -39,7 +39,7 @@ const Gallery = () => {
       { x: "-100vw" },
       {
         x: 0,
-        duration: 10,
+        duration: 20,
       },
       0
     );
