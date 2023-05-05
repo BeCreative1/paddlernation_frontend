@@ -49,6 +49,8 @@ module.exports = {
         "3xl": "1690px",
         "4xl": "2100px",
         xxs: "280px",
+        smmd: "675px",
+        mdlg: "853px",
       },
       backgroundImage: {
         "stacked-waves": "url('../assets/stacked-waves-haikei.svg')",

@@ -17,9 +17,9 @@ const MenuItems = ({ showMenu, activeMenu, currentPage }) => {
       <AiOutlineMenu
         onClick={showMenu}
         className="absolute xs:top-[26px]  
-         xs:left-[188px] xxs:left-[220px] w-8 h-8 xxs:mt-4 
-         sm:top-[26px] sm:left-[243px]
-         md:left-[336px] 
+         xs:left-[188px] xxs:left-[220px] w-8 h-8 xxs:mt-4 sm:w-10 sm:h-10
+         sm:top-[22px] sm:left-[73%] smmd:left-[75%] mdlg:left-[81%]
+         md:left-[78%] 
          
          text-neutral-800"
       />
