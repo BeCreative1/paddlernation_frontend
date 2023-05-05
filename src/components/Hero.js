@@ -13,7 +13,8 @@ const Hero = () => {
   return (
     <div className="h-screen relative flex flex-col items-center justify-center">
       <div
-        className="absolute bottom-3 left-1/2 transform -translate-x-1/2 z-10 sm:bottom-12 md:bottom-10 lg:bottom-16 hover:cursor-pointer"
+        className="absolute bottom-3 left-1/2 transform -translate-x-1/2 z-10  xxs:bottom-14
+        md:bottom-10 lg:bottom-16 hover:cursor-pointer"
         onClick={handleScroll}
       >
         <RxDoubleArrowDown className="w-10 h-10 text-neutral-100 " />
@@ -26,7 +27,7 @@ const Hero = () => {
         loop
         muted
       ></video>
-      <div className="absolute xs:bottom-[150px] md:bottom-40 lg:bottom-17">
+      <div className="absolute xxs:bottom-[140px] md:bottom-40 lg:bottom-17">
         <a href="/RentingPage">
           <button
             className="bg-neutral-100 hover:bg-neutral-200
