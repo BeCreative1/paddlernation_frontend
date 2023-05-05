@@ -30,7 +30,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="flex basis-1/2 flex-col sm:flex-row justify-center items-center ml-[100px] py-4">
-        <a href="/">
+        <a href="/RentingPage">
           <button className="w-52 h-12 bg-neutral-800 text-neutral-100 hover:bg-neutral-700 rounded-lg mb-2 sm:mr-4 sm:mb-0">
             Booking
           </button>

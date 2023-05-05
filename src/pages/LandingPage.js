@@ -11,7 +11,7 @@ const LandingPage = () => {
   // const {} = useFetch(url);
   return (
     <main>
-      <Navbar currentPage="Udlejning" />
+      <Navbar />
       <Hero />
       <About />
       <Gallery />

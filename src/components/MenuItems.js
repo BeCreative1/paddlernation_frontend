@@ -16,7 +16,7 @@ const MenuItems = ({ showMenu, activeMenu, currentPage }) => {
       />
       <li
         className={
-          "mt-40 text-bluepb-800" +
+          "mt-40 text-neutral-600" +
           (currentPage === "Om Os" ? " font-bold" : "")
         }
       >
@@ -24,18 +24,18 @@ const MenuItems = ({ showMenu, activeMenu, currentPage }) => {
       </li>
       <li
         className={
-          "text-bluepb-800" + (currentPage === "Udlejning" ? " font-bold" : "")
+          "text-neutral-600" + (currentPage === "Udlejning" ? " font-bold" : "")
         }
       >
         <a href="/Udlejning">Udlejning</a>
       </li>
       <li
         className={
-          "text-bluepb-800" +
-          (currentPage === "TeamBuildings" ? "font-bold" : "")
+          "text-neutral-600" +
+          (currentPage === "TeamBuildingPage" ? "font-bold" : "")
         }
       >
-        <a href="/TeamBuilding">Team-Building</a>
+        <a href="/TeamBuildingPage">Team-Building</a>
       </li>
     </ul>
   );

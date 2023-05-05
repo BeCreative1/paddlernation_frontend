@@ -30,28 +30,42 @@ const Navbar = ({ currentPage }) => {
   return (
     <header
       className={`${
-        show ? "flex" : "hidden"
-      } items-center h-[120px] w-full customContainer fixed z-[3] transition-all duration-200 ease-in-out`}
+        show ? "" : "hidden"
+      } items-center h-[120px] w-full 2xl:w-[100%] 4xl:px-[200px] customContainer 
+       fixed z-[3] transition-all duration-200 ease-in-out backdrop-blur-[2px]`}
     >
-      <div className="flex items-center justify-between w-full xl:text-[32px]  sm:text-[24px]">
-        <div>
+      <div
+        className="flex items-center justify-between
+        xl:text-[32px] w-full sm:text-[24px] "
+      >
+        <div
+          className="xs:w-80 xs:h-auto md:h-auto md:w-auto lg:h-auto 
+        lg:w-80 xl:w-[500px] 4xl:flex-1 2xl:w-auto"
+        >
           <a href="/">
             <img src="/assets/Logo.png" alt="PaddlerNation" />
           </a>
         </div>
 
         <nav>
-          <div className="lg:hidden text-neutral-800 sm:flex">
-            <AiOutlineMenu onClick={showMenu} />
+          <div className="lg:hidden text-neutral-800 xs:flex">
+            <AiOutlineMenu
+              className="w-8 h-8 mt-5 xs:ml-5"
+              onClick={showMenu}
+            />
           </div>
-          <ul className="flex sm:hidden mt-5 lg:flex flex-row items-center md:ml-[320px] sm:text-[24px] xl:text-[28px] 4xl:text-[32px] 2xl:space-x-[120px] text-neutral-800 ">
+          <ul
+            className="flex xs:hidden mt-5 lg:flex flex-row items-center 
+          lg:space-x-[50px] sm:text-[24px] xl:text-[32px] 2xl:text-[32px] 4xl:text-[38px] 
+          2xl:space-x-[120px] text-neutral-900 2xl:ml-[100px] "
+          >
             <li
               className={
                 "hover:bg-bluepb-700/10 p-2 rounded-2xl transition duration-200 ease-in-out" +
                 (currentPage === "Om Os" ? " font-bold" : "")
               }
             >
-              <a href="/">Om os</a>
+              <a href="/AboutPage">Om os</a>
             </li>
             <li
               className={
@@ -59,15 +73,15 @@ const Navbar = ({ currentPage }) => {
                 (currentPage === "Udlejning" ? " font-bold" : "")
               }
             >
-              <a href="Udlejning/">Udlejning</a>
+              <a href="/RentingPage">Udlejning</a>
             </li>
             <li
               className={
                 "hover:bg-bluepb-700/10 p-2 rounded-2xl transition duration-200 ease-in-out" +
-                (currentPage === "TeamBuildings" ? "font-bold" : "")
+                (currentPage === "TeamBuildingPage" ? "font-bold" : "")
               }
             >
-              <a href="/TeamBuilding">Team-Building</a>
+              <a href="/TeamBuildingPage">Team-Building</a>
             </li>
           </ul>
           <MenuItems showMenu={showMenu} activeMenu={activeMenu} />
