@@ -33,17 +33,18 @@ const Navbar = ({ currentPage }) => {
   return (
     <header
       className={`${
-        show ? "" : "hidden backdrop-blur-none"
+        show ? "" : "hidden "
       } items-center h-[120px] w-full 2xl:w-[100%] 4xl:px-[200px] customContainer 
-       fixed z-[3] transition-all duration-200 ease-in-out backdrop-blur-[4px]`}
+       fixed z-[3] transition-all duration-200 ease-in-out backdrop-blur-[4px]
+        xxs:flex xxs:justify-center xxs:h-[100px] `}
     >
       <div
         className="flex items-center justify-between
         xl:text-[32px] w-full sm:text-[24px] "
       >
         <div
-          className="xs:w-80 xs:h-auto md:h-auto md:w-auto lg:h-auto 
-        lg:w-80 xl:w-[500px] 4xl:flex-1 2xl:w-auto"
+          className="xs:w-80  xxs:h-auto md:h-auto md:w-auto lg:h-auto 
+        lg:w-80 xl:w-[500px] 4xl:flex-1 2xl:w-auto xxs:w-auto "
         >
           <a href="/">
             <img src="/assets/Logo.png" alt="PaddlerNation" />
@@ -51,14 +52,14 @@ const Navbar = ({ currentPage }) => {
         </div>
 
         <nav>
-          <div className="lg:hidden cursor-pointer text-neutral-800 xs:flex">
+          <div className="lg:hidden cursor-pointer text-neutral-800 xxs:flex ">
             <AiOutlineMenu
-              className={"w-8 h-8 mt-5 xs:ml-5 "}
+              className={"w-8 h-8 mt-5 xxs:mt-4 xxs:ml-5 "}
               onClick={showMenu}
             />
           </div>
           <ul
-            className="flex xs:hidden xs:backdrop:blur-none mt-5 lg:flex flex-row items-center 
+            className="flex xxs:hidden xxs:backdrop:blur-none mt-5 lg:flex flex-row items-center 
           lg:space-x-[50px] sm:text-[24px] xl:text-[32px] 2xl:text-[32px] 4xl:text-[38px] 
           2xl:space-x-[120px] text-neutral-900 2xl:ml-[100px] "
           >
