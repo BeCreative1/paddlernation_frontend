@@ -4,22 +4,22 @@ import RadioChoices from "./RadioChoices";
 const Oplysninger = () => {
   return (
     <main>
-      <article className="lg:flex  lg:justify-evenly w-full lg:mx-2 lg:gap-1 ">
-        <div className="flex xxs:justify-center lg:justify-start lg:w-[60%] xxs:mt-5">
+      <article className="lg:flex  lg:justify-around w-full lg:mx-2  ">
+        <div className="flex xxs:justify-center lg:justify-start  xxs:mt-5">
           <div
             className="sm:mt-8 flex 
-         xxs:w-[300px] xxs:h-[380px] xs:w-[400px] md:w-[700px] sm:h-[500px] md:h-[620px] lg:w-[650px] lg:h-[450px] 
-          bg-white  py-12 xxs:py-10 rounded-2xl sm:w-[600px] 
+         xxs:w-[300px] xxs:h-[380px] xs:w-[400px] md:w-[700px] sm:h-[500px] md:h-[620px] lg:w-[580px] xl:w-[750px] 3xl:w-[850px] lg:h-[430px] 
+          bg-white  py-12 xxs:py-10  lg:py-14 rounded-2xl sm:w-[600px] 
           shadow-[0_5px_25px_-5px_rgba(0,0,0,0.3)]"
           >
             <form
               action="w-full"
-              className="w-full lg:grid-cols-2 lg:grid lg:gap-x-[60px] mx-5 xxs:mx-0"
+              className="w-full lg:grid-cols-2 lg:grid lg:gap-x-[15px] mx-5 xxs:mx-0"
             >
               <div class="justify-center items-center flex">
                 <input
                   required
-                  className=" sm:w-[95%] lg:w-[300px] xl:w-[280px] xs:w-[350px] md:h-[80px] sm:h-[60px] lg:text-sm bg-white text-gray-700 border shadow-[0_5px_25px_-5px_rgba(0,0,0,0.3)] px-10 mb-3 rounded-2xl focus:bg-white"
+                  className=" sm:w-[95%] lg:w-[250px] lg:h-[70px] xl:w-[300px] 3xl:w-[350px] xs:w-[350px] md:h-[80px] sm:h-[60px] lg:text-sm md:text-lg xl:text-base 3xl:text-lg bg-white text-gray-700 border shadow-[0_5px_25px_-5px_rgba(0,0,0,0.3)] px-10 mb-3 rounded-2xl focus:bg-white"
                   type="text"
                   placeholder="Navn"
                 />
@@ -27,7 +27,7 @@ const Oplysninger = () => {
 
               <div class="justify-center items-center flex">
                 <input
-                  className="sm:w-[95%] lg:w-[400px] xl:w-[280px] md:h-[80px] xs:w-[350px]  sm:h-[60px] lg:text-sm bg-white text-gray-700 border shadow-[0_5px_25px_-5px_rgba(0,0,0,0.3)] px-10 mb-3 rounded-2xl focus:bg-white"
+                  className="sm:w-[95%] lg:w-[250px] lg:h-[70px] 3xl:w-[350px] xl:w-[280px] md:h-[80px] xs:w-[350px]  sm:h-[60px] lg:text-sm md:text-lg  xl:text-base 3xl:text-lg bg-white text-gray-700 border shadow-[0_5px_25px_-5px_rgba(0,0,0,0.3)] px-10 mb-3 rounded-2xl focus:bg-white"
                   type="email"
                   placeholder="Email"
                   required
@@ -36,7 +36,7 @@ const Oplysninger = () => {
 
               <div class="justify-center items-center flex">
                 <input
-                  className="sm:w-[95%] lg:w-[400px] xl:w-[280px] md:h-[80px] xs:w-[350px]  sm:h-[60px] lg:text-sm bg-white text-gray-700 border shadow-[0_5px_25px_-5px_rgba(0,0,0,0.3)] px-10 mb-3 rounded-2xl focus:bg-white"
+                  className="sm:w-[95%] lg:w-[250px] lg:h-[70px] 3xl:w-[350px] xl:w-[280px] md:h-[80px] xs:w-[350px]  sm:h-[60px] lg:text-sm md:text-lg  xl:text-base 3xl:text-lg bg-white text-gray-700 border shadow-[0_5px_25px_-5px_rgba(0,0,0,0.3)] px-10 mb-3 rounded-2xl focus:bg-white"
                   type="tel"
                   placeholder="+45 "
                   required
@@ -45,7 +45,7 @@ const Oplysninger = () => {
 
               <div class="justify-center items-center flex">
                 <input
-                  className="sm:w-[95%] lg:w-[400px] xl:w-[280px] md:h-[80px] xs:w-[350px]   sm:h-[60px] lg:text-sm bg-white text-gray-700 border shadow-[0_5px_25px_-5px_rgba(0,0,0,0.3)] px-10 mb-3 rounded-2xl focus:bg-white"
+                  className="sm:w-[95%] lg:w-[250px] lg:h-[70px] 3xl:w-[350px] xl:w-[280px] md:h-[80px] xs:w-[350px]   sm:h-[60px] lg:text-sm md:text-lg  xl:text-base 3xl:text-lg bg-white text-gray-700 border shadow-[0_5px_25px_-5px_rgba(0,0,0,0.3)] px-10 mb-3 rounded-2xl focus:bg-white"
                   type="tel"
                   placeholder="CVR"
                 />
@@ -53,7 +53,7 @@ const Oplysninger = () => {
 
               <div class="justify-center items-center flex">
                 <input
-                  className="sm:w-[95%] lg:w-[400px] xl:w-[280px] md:h-[80px] xs:w-[350px]  sm:h-[60px] lg:text-sm bg-white text-gray-700 border shadow-[0_5px_25px_-5px_rgba(0,0,0,0.3)] px-10 mb-3 rounded-2xl focus:bg-white"
+                  className="sm:w-[95%] lg:w-[250px] lg:h-[70px] 3xl:w-[350px] xl:w-[280px] md:h-[80px] xs:w-[350px]  sm:h-[60px] lg:text-sm md:text-lg  xl:text-base 3xl:text-lg bg-white text-gray-700 border shadow-[0_5px_25px_-5px_rgba(0,0,0,0.3)] px-10 mb-3 rounded-2xl focus:bg-white"
                   type="text"
                   placeholder="Adresse"
                 />
@@ -61,7 +61,7 @@ const Oplysninger = () => {
 
               <div class="justify-center items-center flex ">
                 <input
-                  className="sm:w-[95%] lg:w-[400px] xl:w-[280px] md:h-[80px] xs:w-[350px] sm:h-[60px] lg:text-sm bg-white text-gray-700 border shadow-[0_5px_25px_-5px_rgba(0,0,0,0.3)] px-10 mb-3 rounded-2xl focus:bg-white"
+                  className="sm:w-[95%] lg:w-[250px] lg:h-[70px] 3xl:w-[350px] xl:w-[280px] md:h-[80px] xs:w-[350px] sm:h-[60px] lg:text-sm md:text-lg  xl:text-base 3xl:text-lg bg-white text-gray-700 border shadow-[0_5px_25px_-5px_rgba(0,0,0,0.3)] px-10 mb-3 rounded-2xl focus:bg-white"
                   type="text"
                   placeholder="Postnummer"
                 />
@@ -80,8 +80,12 @@ const Oplysninger = () => {
             </div>
           </section>
 
-          <section className="flex justify-center items-center mb-20 xxs:hidden ">
-            <button className="bg-bluepb-800 md:px-12 px-6 py-4 font-bold text-neutral-100  tracking-wider sm:text-[16px] text-[14px] lg:text-[18px] flex justify-center items-center rounded-lg mt-12">
+          <section className="lg:flex lg:justify-center lg:items-center lg:mb-20 xxs:hidden lg:active ">
+            <button
+              className="bg-bluepb-800 md:px-12 px-6 py-4 font-bold text-neutral-100
+              tracking-wider sm:text-[16px] text-[14px] lg:text-[18px]
+               flex justify-center items-center rounded-lg mt-12"
+            >
               Betaling
             </button>
           </section>
@@ -103,11 +107,11 @@ const Oplysninger = () => {
                 styles="w-[250px]"
                 name="Mobile Pay"
               ></RadioChoices>
-              <div className="xxs:absolute md:bottom-[35%] md:right-[54%] xxs:bottom-[67%] xxs:right-[18%] xxs:z-10 ">
+              <div className="xxs:absolute md:bottom-[35%] md:right-[54%] xxs:bottom-[67%] xxs:right-[18%] 3xl:right-[53.5%] lg:right-[54.5%] 4xl:right-[52%] xxs:z-10 ">
                 <img
                   src="/assets/MobilePayIcon.png"
                   className="w-[30px] h-[30px] 
-                      lg:right-[75%] 2xl:right-[76.5%] "
+                      lg:right-[75%] 2xl:right-[76.5%] 3xl:right-[77.5%]"
                   alt="MobilePayIcon"
                 />
               </div>
@@ -120,7 +124,7 @@ const Oplysninger = () => {
           </fieldset>
         </form>
       </section>
-      <section className="flex justify-center items-center mb-20 xxs:active ">
+      <section className="flex justify-center items-center mb-20 xxs:active lg:hidden ">
         <button
           className="bg-bluepb-800 md:px-12 px-6 py-4 font-bold
          text-neutral-100  tracking-wider sm:text-[16px] text-[14px] 

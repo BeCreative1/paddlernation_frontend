@@ -65,7 +65,7 @@ const Navbar = ({ currentPage }) => {
           >
             <li
               className={
-                "hover:bg-bluepb-700/10 p-2 rounded-2xl transition duration-200 ease-in-out" +
+                "hover:bg-bluepb-600/10 text-bluepb-900 p-2 rounded-2xl transition duration-200 ease-in-out" +
                 (currentPage === "AboutPage" ? " font-bold" : "")
               }
             >
@@ -73,7 +73,7 @@ const Navbar = ({ currentPage }) => {
             </li>
             <li
               className={
-                "hover:bg-bluepb-700/10 p-2 rounded-2xl transition duration-200 ease-in-out" +
+                "hover:bg-bluepb-700/10 text-bluepb-900 p-2  rounded-2xl transition duration-200 ease-in-out" +
                 (currentPage === "RentingPage" ? " font-bold" : "")
               }
             >
@@ -83,7 +83,7 @@ const Navbar = ({ currentPage }) => {
             </li>
             <li
               className={
-                "hover:bg-bluepb-700/10 p-2 rounded-2xl transition duration-200 ease-in-out" +
+                "hover:bg-bluepb-700/10 text-bluepb-900 p-2 rounded-2xl transition duration-200 ease-in-out" +
                 (currentPage === "TeamBuildingPage" ? "font-bold" : "")
               }
             >
