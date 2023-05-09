@@ -4,11 +4,11 @@ import RadioChoices from "./RadioChoices";
 const Oplysninger = () => {
   return (
     <main>
-      <article className="lg:flex  lg:justify-around w-full lg:mx-2  ">
+      <article className="lg:flex  lg:justify-around w-full h-full lg:mx-3 xl:mx-5 max-w-screen-2xl 2xl:mx-auto">
         <div className="flex xxs:justify-center lg:justify-start  xxs:mt-5">
           <div
             className="sm:mt-8 flex 
-         xxs:w-[300px] xxs:h-[380px] xs:w-[400px] md:w-[700px] sm:h-[500px] md:h-[620px] lg:w-[580px] xl:w-[750px] 3xl:w-[850px] lg:h-[430px] 
+         xxs:w-[300px] xxs:h-[380px] xs:w-[400px] md:w-[700px] sm:h-[500px] md:h-[620px] lg:w-[600px] xl:w-[720px] 3xl:w-[850px] lg:h-[430px] 
           bg-white  py-12 xxs:py-10  lg:py-14 rounded-2xl sm:w-[600px] 
           shadow-[0_5px_25px_-5px_rgba(0,0,0,0.3)]"
           >
@@ -70,7 +70,7 @@ const Oplysninger = () => {
           </div>
         </div>
 
-        <div className="sm:mt-10 lg:mt-0 ">
+        <div className="sm:mt-10 lg:mt-0 max-w-screen-2xl xl:mx-auto ">
           <section className="lg:flex md:mr-5 ">
             <div
               className={`flex flex-col justify-start items-center 
@@ -80,7 +80,7 @@ const Oplysninger = () => {
             </div>
           </section>
 
-          <section className="lg:flex lg:justify-center lg:items-center lg:mb-20 xxs:hidden lg:active ">
+          <section className="lg:flex lg:justify-center lg:items-center lg:mb-20 xxs:hidden lg:active  ">
             <button
               className="bg-bluepb-800 md:px-12 px-6 py-4 font-bold text-neutral-100
               tracking-wider sm:text-[16px] text-[14px] lg:text-[18px]
@@ -92,7 +92,7 @@ const Oplysninger = () => {
         </div>
       </article>
 
-      <section className="lg:mb-10  lg:relative xxs:z-0">
+      <section className="lg:mb-10  lg:relative xxs:z-0 max-w-screen-2xl  lg:mx-auto">
         <form className=" lg:backdrop-blur-sm w-full flex justify-start lg:mb-10 xxs:mt-5">
           <fieldset className="lg:w-[60%] w-[100%] lg:mb-10 xxs:flex xxs:flex-col xxs:items-center ">
             <legend className="text-center font-semibold xxs:text-[32px] text-[24px] text-bluepb-900 mb-4">

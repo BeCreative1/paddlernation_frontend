@@ -12,7 +12,7 @@ import {
 const RentingPage = () => {
   const [state, setState] = useState("select");
   return (
-    <div className="flex flex-col w-full bg-waves overflow-x-hidden">
+    <div className="flex flex-col w-full bg-waves overflow-x-hidden h-screen">
       {<Navbar currentPage="RentingPage" />}
 
       {state === "select" && <RentProcess title={"Udlejning"} step={1} />}

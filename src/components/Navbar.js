@@ -35,8 +35,8 @@ const Navbar = ({ currentPage }) => {
       className={`${
         show ? "" : "hidden "
       } items-center h-[120px] w-full 2xl:w-[100%] 4xl:px-[200px] customContainer 
-       fixed z-[3] transition-all duration-200 ease-in-out backdrop-blur-[4px]
-        xxs:flex xxs:justify-center xxs:h-[100px] `}
+       fixed z-[3] transition-all duration-200 ease-in-out backdrop-blur-[4px] max-w-screen-4xl 4xl:mx-[10%] 
+        xxs:flex xxs:justify-center xxs:h-[100px]`}
     >
       <div
         className="flex items-center justify-between
