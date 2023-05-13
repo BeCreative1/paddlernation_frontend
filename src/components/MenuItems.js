@@ -1,41 +1,63 @@
-import React from "react";
-import { AiOutlineClose } from "react-icons/ai";
+import React, { use, useEffect, useState } from "react";
+import { AiOutlineMenu } from "react-icons/ai";
+import Router, { useRouter } from "next/router";
 
 const MenuItems = ({ showMenu, activeMenu, currentPage }) => {
+  const router = useRouter();
+
   return (
     <ul
-      className={
+      className={`${
         activeMenu
-          ? "flex-col flex items-center fixed top-0 sm:bottom-1/3 right-0 sm:left-1/4 md:left-1/2 uppercase backdrop-blur-md gap-8 justify-start p-8 z-auto"
-          : "hidden"
-      }
+          ? "flex-col flex items-center cursor-pointer backdrop:blur-3xl fixed top-0 sm:bottom-1/3 right-0 sm:left-1/2 md:left-1/2 uppercase gap-8  p-6 z-auto"
+          : " hidden"
+      } 
+          lg:hidden`}
     >
-      <AiOutlineClose
+      <AiOutlineMenu
         onClick={showMenu}
-        className="absolute text-neutral-100 top-10 right-10 w-10 h-10"
+        className="absolute xs:top-[26px]  
+         xs:left-[188px] xxs:left-[220px] w-8 h-8 xxs:mt-4 sm:w-10 sm:h-10
+         sm:top-[22px] sm:left-[73%] smmd:left-[75%] mdlg:left-[81%]
+         md:left-[78%] 
+         
+         text-neutral-800"
       />
       <li
         className={
-          "mt-40 text-neutral-600" +
-          (currentPage === "Om Os" ? " font-bold" : "")
+          "mt-40 text-neutral-500 hover:bg-neutral-800/20 text-3xl bg-neutral-400/30 " +
+          (currentPage === "AboutPage" ? " font-bold" : "")
         }
       >
-        <a href="/">Om os</a>
+        <button className="uppercase" onClick={() => router.push("/AboutPage")}>
+          Om os
+        </button>
       </li>
       <li
         className={
-          "text-neutral-600" + (currentPage === "Udlejning" ? " font-bold" : "")
+          "text-neutral-500 hover:bg-neutral-800/20 text-3xl bg-neutral-400/30 " +
+          (currentPage === "RentingPage" ? " font-bold" : "")
         }
       >
-        <a href="/Udlejning">Udlejning</a>
+        <button
+          className="uppercase"
+          onClick={() => router.push("/RentingPage")}
+        >
+          Udlejning
+        </button>
       </li>
       <li
         className={
-          "text-neutral-600" +
+          "text-neutral-500 hover:bg-neutral-800/20 text-3xl bg-neutral-400/30" +
           (currentPage === "TeamBuildingPage" ? "font-bold" : "")
         }
       >
-        <a href="/TeamBuildingPage">Team-Building</a>
+        <button
+          className="uppercase"
+          onClick={() => router.push("/TeamBuildingPage")}
+        >
+          Team-Building
+        </button>
       </li>
     </ul>
   );
