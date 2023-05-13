@@ -35,8 +35,8 @@ const Navbar = ({ currentPage }) => {
       className={`${
         show ? "" : "hidden "
       } items-center h-[120px] w-full 2xl:w-[100%] 4xl:px-[200px] customContainer 
-       fixed z-[3] transition-all duration-200 ease-in-out backdrop-blur-[4px]
-        xxs:flex xxs:justify-center xxs:h-[100px] `}
+       fixed z-[3] transition-all duration-200 ease-in-out backdrop-blur-[4px] max-w-screen-4xl 4xl:mx-[10%] 
+        xxs:flex xxs:justify-center xxs:h-[100px]`}
     >
       <div
         className="flex items-center justify-between
@@ -65,7 +65,7 @@ const Navbar = ({ currentPage }) => {
           >
             <li
               className={
-                "hover:bg-bluepb-700/10 p-2 rounded-2xl transition duration-200 ease-in-out" +
+                "hover:bg-bluepb-600/10 text-bluepb-900 p-2 rounded-2xl transition duration-200 ease-in-out" +
                 (currentPage === "AboutPage" ? " font-bold" : "")
               }
             >
@@ -73,7 +73,7 @@ const Navbar = ({ currentPage }) => {
             </li>
             <li
               className={
-                "hover:bg-bluepb-700/10 p-2 rounded-2xl transition duration-200 ease-in-out" +
+                "hover:bg-bluepb-700/10 text-bluepb-900 p-2  rounded-2xl transition duration-200 ease-in-out" +
                 (currentPage === "RentingPage" ? " font-bold" : "")
               }
             >
@@ -83,7 +83,7 @@ const Navbar = ({ currentPage }) => {
             </li>
             <li
               className={
-                "hover:bg-bluepb-700/10 p-2 rounded-2xl transition duration-200 ease-in-out" +
+                "hover:bg-bluepb-700/10 text-bluepb-900 p-2 rounded-2xl transition duration-200 ease-in-out" +
                 (currentPage === "TeamBuildingPage" ? "font-bold" : "")
               }
             >
