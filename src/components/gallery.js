@@ -4,149 +4,52 @@ import { useRef, useEffect } from "react";
 import { ScrollTrigger } from "node_modules/gsap/ScrollTrigger";
 
 const Gallery = () => {
-  gsap.registerPlugin(ScrollTrigger);
   const app = useRef();
+
   useEffect(() => {
-    var tl = gsap.timeline({
+    gsap.registerPlugin(ScrollTrigger);
+
+    const tl = gsap.timeline({
       defaults: {
-        ease: "linear",
+        ease: "power1.inOut",
         repeat: -1,
+        yoyo: true, // Reverse the animation at the end
       },
     });
 
     tl.fromTo(
       ".ImageScroll__image-1",
       { x: "-100vw" },
-      {
-        x: 0,
-        duration: 20,
-      },
+      { x: 0, duration: 30 },
       0
     );
 
     tl.fromTo(
       ".ImageScroll__image-2",
       { x: 0 },
-      {
-        x: "-100vw",
-        duration: 20,
-      },
-      0
-    );
-
-    tl.fromTo(
-      ".ImageScroll__image-3",
-      { x: "-100vw" },
-      {
-        x: 0,
-        duration: 20,
-      },
+      { x: "-100vw", duration: 30 },
       0
     );
 
     ScrollTrigger.create({
-      trigger: "body",
+      trigger: "gallery-section",
       start: "top top",
       end: "bottom",
       markers: false,
-
-      // onEnter: () => {
-      //   tl.play();
-      // },
-      // onLeave: () => {
-      //   tl.pause();
-      // },
       onUpdate: (self) => {
         const velocity = Math.abs(self.getVelocity());
-        tl.timeScale(velocity / 100);
-        tl.timeScale(velocity / 100);
+        tl.timeScale(velocity / 300);
+        tl.timeScale(velocity / 300);
         gsap.to(tl, { timeScale: 1, overwrite: true });
       },
     });
   }, []);
+
   return (
     <>
-      {/* <div className="bg-neutral-50 h-[50vw] flex items-center">
-        <div className="">
-          <div className="flex">
-            <img
-              src="./assets/GallerySectionImages/1.jpg"
-              className=""
-              alt=""
-            />
-            <img
-              src="./assets/GallerySectionImages/2.jpg"
-              className="w-[15%]"
-              alt=""
-            />
-            <img
-              src="./assets/GallerySectionImages/2.jpg"
-              className="w-[15%]"
-              alt=""
-            />
-            <img
-              src="./assets/GallerySectionImages/2.jpg"
-              className="w-[15%]"
-              alt=""
-            />
-            <img
-              src="./assets/GallerySectionImages/2.jpg"
-              className="w-[15%]"
-              alt=""
-            />
-            <img
-              src="./assets/GallerySectionImages/2.jpg"
-              className="w-[15%]"
-              alt=""
-            />
-            <img
-              src="./assets/GallerySectionImages/2.jpg"
-              className="w-[15%]"
-              alt=""
-            />
-          </div>
-
-          <div className="flex">
-            <img
-              src="./assets/GallerySectionImages/1.jpg"
-              className="w-[15%]"
-              alt=""
-            />
-            <img
-              src="./assets/GallerySectionImages/2.jpg"
-              className="w-[15%]"
-              alt=""
-            />
-            <img
-              src="./assets/GallerySectionImages/2.jpg"
-              className="w-[15%]"
-              alt=""
-            />
-            <img
-              src="./assets/GallerySectionImages/2.jpg"
-              className="w-[15%]"
-              alt=""
-            />
-            <img
-              src="./assets/GallerySectionImages/2.jpg"
-              className="w-[15%]"
-              alt=""
-            />
-            <img
-              src="./assets/GallerySectionImages/2.jpg"
-              className="w-[15%]"
-              alt=""
-            />
-            <img
-              src="./assets/GallerySectionImages/2.jpg"
-              className="w-[15%]"
-              alt=""
-            />
-          </div>
-        </div>
-      </div> */}
+      {}
       <div ref={app}>
-        <section className="">
+        <section className="gallery-section">
           <div className="ImageScroll__wrapper hidden content-center mb-10 mt-24 md:flex ">
             <div className="ImageScroll__image    ImageScroll__image-1 flex ">
               <img
@@ -269,11 +172,7 @@ const Gallery = () => {
                 className=" mr-[1vw]"
                 alt=""
               />
-              <img
-                src="./assets/GallerySectionImages/18.jpg"
-                className=" mr-[1vw]"
-                alt=""
-              />
+
               <img
                 src="./assets/GallerySectionImages/White.jpg"
                 className=" mr-[1vw]"
@@ -294,11 +193,7 @@ const Gallery = () => {
                 className=" mr-[1vw]"
                 alt=""
               />
-              <img
-                src="./assets/GallerySectionImages/19.jpg"
-                className=" mr-[1vw]"
-                alt=""
-              />
+
               <img
                 src="./assets/GallerySectionImages/White.jpg"
                 className=" mr-[1vw]"
@@ -319,11 +214,7 @@ const Gallery = () => {
                 className=" mr-[1vw]"
                 alt=""
               />
-              <img
-                src="./assets/GallerySectionImages/17.jpg"
-                className=" mr-[1vw]"
-                alt=""
-              />
+
               <img
                 src="./assets/GallerySectionImages/White.jpg"
                 className=" mr-[1vw]"
@@ -499,11 +390,7 @@ const Gallery = () => {
                 className=" mr-[1vw]  hidden md:block"
                 alt=""
               />
-              <img
-                src="./assets/GallerySectionImages/19.jpg"
-                className=" mr-[1vw]"
-                alt=""
-              />
+
               <img
                 src="./assets/GallerySectionImages/13.jpg"
                 className=" mr-[1vw]"
@@ -514,11 +401,7 @@ const Gallery = () => {
                 className=" mr-[1vw]  hidden md:block"
                 alt=""
               />
-              <img
-                src="./assets/GallerySectionImages/18.jpg"
-                className=" mr-[1vw]"
-                alt=""
-              />
+
               <img
                 src="./assets/GallerySectionImages/14.jpg"
                 className=" mr-[1vw]"
@@ -529,11 +412,7 @@ const Gallery = () => {
                 className=" mr-[1vw]  hidden md:block"
                 alt=""
               />
-              <img
-                src="./assets/GallerySectionImages/17.jpg"
-                className=" mr-[1vw]"
-                alt=""
-              />
+
               <img
                 src="./assets/GallerySectionImages/15.jpg"
                 className=" mr-[1vw]"
